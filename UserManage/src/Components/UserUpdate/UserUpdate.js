@@ -10,7 +10,7 @@ export default function UserUpdate() {
   const nav = useNavigate()
 
   const HandleUpdate = () => {
-    fetch("https://vietcpq.name.vn/U2FsdGVkX18MaY1VB6bVfvVBm0wdPflO/user/user", {
+    fetch("http://teachingserver.org/U2FsdGVkX18MaY1VB6bVfvVBm0wdPflO/user/user", {
       method: "PUT",
       headers: {
         'accept': 'application/json',

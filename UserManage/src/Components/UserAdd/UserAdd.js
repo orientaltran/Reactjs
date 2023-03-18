@@ -9,7 +9,7 @@ export default function UserAdd() {
 
   const nav = useNavigate()
   const HandleAdd = () => {
-    fetch("https://vietcpq.name.vn/U2FsdGVkX18MaY1VB6bVfvVBm0wdPflO/user/user", {
+    fetch("http://teachingserver.org/U2FsdGVkX18MaY1VB6bVfvVBm0wdPflO/user/user", {
       method: "POST",
       headers: {
         'accept': 'application/json',

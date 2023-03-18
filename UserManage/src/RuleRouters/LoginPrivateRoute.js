@@ -1,7 +1,7 @@
 import { Navigate } from "react-router-dom";
 
-export default function LoginPrivateRoute({children}) {
+export default function LoginPrivateRoute({ children }) {
   return (
-        localStorage.getItem("email") ? children : Navigate({to: "/login"})
+    localStorage.getItem("email") ? children : Navigate({ to: "/login" })
   )
 }

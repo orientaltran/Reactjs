@@ -4,9 +4,9 @@ import { useNavigate } from 'react-router-dom'
 export default function Login() {
     const [Email, setEmail] = useState("jpg")
     const [Password, setPassword] = useState("jpg")
-    const nav = useNavigate
+    const nav = useNavigate();
     const HandleLogin = () => {
-        fetch("https://vietcpq.name.vn/U2FsdGVkX18MaY1VB6bVfvVBm0wdPflO/user/Login", {
+        fetch("http://teachingserver.org/U2FsdGVkX18MaY1VB6bVfvVBm0wdPflO/user/Login", {
             headers: {
                 'accept': 'application/json',
                 'Content-Type': 'application/json'
@@ -16,6 +16,7 @@ export default function Login() {
         })
             .then(res => res.json())
             .then(data => {
+                console.log(data)
                 localStorage.setItem("email", data.Email)
                 nav("/")
             })

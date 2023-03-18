@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 export default function User() {
-    const nav = useNavigate()
+    const nav = useNavigate();
     const [lsUser, setLsUser] = useState([])
     const HandleLogout = () => {
         localStorage.removeItem("email")
@@ -15,7 +15,7 @@ export default function User() {
 
     // Function GET USER
     const GetUser = () => {
-        fetch("https://vietcpq.name.vn/U2FsdGVkX18MaY1VB6bVfvVBm0wdPflO/user/user")
+        fetch("http://teachingserver.org/U2FsdGVkX18MaY1VB6bVfvVBm0wdPflO/user/user")
             .then(res => res.json())
             .then(data => setLsUser(data))
     }
@@ -32,7 +32,7 @@ export default function User() {
     const DeleteUser = (e, userInfo) => {
         e.preventDefault()
 
-        fetch("https://vietcpq.name.vn/U2FsdGVkX18MaY1VB6bVfvVBm0wdPflO/user/user", {
+        fetch("http://teachingserver.org/U2FsdGVkX18MaY1VB6bVfvVBm0wdPflO/user/user", {
             method: "DELETE",
             headers: {
                 'accept': 'application/json',
@@ -57,7 +57,7 @@ export default function User() {
     return (
         <div>
             <button onClick={HandleLogout}>Logout</button>
-            <link to={'/UserAdd'}>Add</link>
+            <Link to={'/UserAdd'}>Add</Link>
             {
                 lsUser.map((n, i) => {
                     return <p key={i}>
