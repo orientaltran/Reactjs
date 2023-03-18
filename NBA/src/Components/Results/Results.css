@@ -1,0 +1,9 @@
+.Results {
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+.Results button {
+    padding: 8px;
+    background-color: chartreuse;
+}

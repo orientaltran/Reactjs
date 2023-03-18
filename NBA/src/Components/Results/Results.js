@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import './Results.css'
 
 export default function Results() {
     const nav = useNavigate();
@@ -10,7 +11,7 @@ export default function Results() {
         window.location.reload(false);
     }
     return (
-        <div>
+        <div className='Results'>
             <h3>{`Sacramento Kings [SAC]`}</h3>
             <h5>western conference</h5>
             <hr />

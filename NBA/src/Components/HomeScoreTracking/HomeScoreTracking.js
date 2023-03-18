@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { context } from '../../Store/Store';
+import { context } from '../../Store/Store'
+import './HomeScoreTracking.css'
 
 export default function HomeScoreTracking() {
 
@@ -48,7 +49,7 @@ export default function HomeScoreTracking() {
     }
 
     return (
-        <div>
+        <div className='HomeTracking'>
             <form onSubmit={HandlTracking}>
                 <label>Choose a team:</label>
                 <select id="Teams" name="id">
