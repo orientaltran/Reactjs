@@ -1,0 +1,49 @@
+.Games {
+    background-color: beige;
+    border: 10px;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+}
+
+.Games p {
+    font-size: 15px;
+}
+
+.Games .GamesText {
+    width: 50%;
+    float: left;
+}
+
+.Games .GamesImg {
+    width: 50%;
+    float: right;
+}
+
+.Games .GamesImg img {
+    width: 50%;
+}
+
+.Games .GamesText button {
+    margin: 70px 0px 15px 0px;
+    background-color: rgb(0, 255, 157);
+    color: white;
+    padding: 10px;
+}
+
+.Games .GamesHead button {
+    float: right;
+    margin-top: 10px;
+}
+
+.Games .GamesText b {
+    background-color: chartreuse;
+    border: 1px;
+    border-radius: 10%;
+}
+
+.Games .GamesText em {
+    background-color: red;
+}

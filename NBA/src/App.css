@@ -1,0 +1,15 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.app {
+    padding: 10px;
+}
+
+.app .GameTracking {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+}
