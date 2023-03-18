@@ -61,9 +61,9 @@ export default function User() {
             {
                 lsUser.map((n, i) => {
                     return <p key={i}>
-                        <a href='/' onClick={e => DeleteUser(e, n)}>X</a>
-                        <a href='/' onClick={e => MoveToUpdate(e, n)}>Update</a>
-                        <a href='/'>n.Name</a>
+                        <a href='/' onClick={e => DeleteUser(e, n)}>X </a>
+                        <a href='/' onClick={e => MoveToUpdate(e, n)}>Update </a>
+                        <a href='/'>{n.Name} </a>
                     </p>
                 })
             }
